@@ -33,5 +33,29 @@ React solves this problem by automatically syncing the state with the UI using t
 => react is not a complete solution ( No SEO, Browser render of JS, No routing)
 => Framework : Next.js, Gatsby, Remix
 
+6) # A Component in React.js is a reusable piece of UI (User Interface) that returns JSX (HTML-like code) and controls a part of the webpage.
+    ```javascript
+    function Welcome() {
+    return <h1>Hello, Welcome to React</h1>;
+    }
 
+    export default Welcome;
+    ```
+7) # Hooks in React.js are special functions that allow functional components to use state and other React features (like lifecycle methods).
+    ```javascript
+        import React, { useState } from "react";
+
+        function Counter() {
+        const [count, setCount] = useState(0);
+
+        return (
+            <div>
+            <p>Count: {count}</p>
+            <button onClick={() => setCount(count + 1)}>Increase</button>
+            </div>
+        );
+        }
+
+        export default Counter;
+    ```
 
